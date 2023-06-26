@@ -25,7 +25,7 @@ export const ContactForm = ({onAddContact}) => {
             className={css.styledInput}
             type="text"
             name="name"
-            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            pattern=".*"
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             required
           />
@@ -38,7 +38,7 @@ export const ContactForm = ({onAddContact}) => {
             id="number"
             type="tel"
             name="number"
-            pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+            pattern="[0-9A-Za-z!@#$%^&*]*"
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             required
           />
